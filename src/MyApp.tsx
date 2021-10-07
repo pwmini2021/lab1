@@ -1,15 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './MyApp.css';
+import StudentsList from "./components/StudentsList";
 
 function MyApp() {
     return (
         <div className="MyApp">
             <header className="MyApp-header">
                 <img src={logo} className="MyApp-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/MyApp.tsx</code> and save to reload.
-                </p>
                 <a
                     className="MyApp-link"
                     href="https://reactjs.org"
@@ -18,6 +16,9 @@ function MyApp() {
                 >
                     Learn React
                 </a>
+
+                <StudentsList/>
+
             </header>
         </div>
     );
