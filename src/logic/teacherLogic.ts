@@ -13,3 +13,7 @@ const getActiveTeachers = (teachers: typeof data) => (
 export const sumActiveTeachersAges = (teachers: typeof data) => (
     sumTeacherAges(getActiveTeachers(teachers))
 )
+
+export const getStudentsNames = (teachers: typeof data) => (
+    teachers.flatMap(teacher => teacher.students).map(student => student.name)
+)

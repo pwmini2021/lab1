@@ -1,5 +1,5 @@
 import React from 'react';
-import {sumActiveTeachersAges, sumTeacherAges} from "../logic/teacherLogic";
+import {getStudentsNames, sumActiveTeachersAges, sumTeacherAges} from "../logic/teacherLogic";
 import {data} from "../data/data";
 
 function StudentsList() {
@@ -12,13 +12,20 @@ function StudentsList() {
         console.log(sumActiveTeachersAges(data));
     }
 
+    const sortedStudentsHandler = () => {
+        const studentsNames = getStudentsNames(data);
+        studentsNames.sort();
+        console.log(studentsNames);
+    }
+
 
     return (
         <div>
             List of students
             <div>
                 <button onClick={teacherAgesHandler}>Sum of teachers ages</button><br/>
-                <button onClick={activeTeacherAgesHandler}>Sum of active teachers ages</button>
+                <button onClick={activeTeacherAgesHandler}>Sum of active teachers ages</button><br/>
+                <button onClick={sortedStudentsHandler}>All students sorted alphabetically</button>
             </div>
         </div>
     );
