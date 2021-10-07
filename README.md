@@ -1,3 +1,7 @@
+# Lab instructions
+
+[http://pw2021.react.edu.pl/2020/10/05/lab-1/](http://pw2021.react.edu.pl/2020/10/05/lab-1/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
