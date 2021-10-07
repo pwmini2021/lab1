@@ -8,7 +8,7 @@ ReactDOM.render(
     <React.StrictMode>
         <MyApp/>
     </React.StrictMode>,
-    document.getElementById('root')
+    document.getElementById('reactinjectedhere')
 );
 
 // If you want to start measuring performance in your app, pass a function
